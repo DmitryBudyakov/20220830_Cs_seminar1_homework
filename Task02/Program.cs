@@ -5,3 +5,12 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
+Console.Clear();
+Console.Write("Введите 1-е число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите 2-е число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+int max = num1;
+
+if (num2 > max) max = num2;
+Console.WriteLine($"max = {max}");

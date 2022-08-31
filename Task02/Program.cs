@@ -11,6 +11,11 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите 2-е число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 int max = num1;
+int min = num2;
 
-if (num2 > max) max = num2;
-Console.WriteLine($"max = {max}");
+if (num2 > max)
+{
+    max = num2;
+    min = num1;
+}
+Console.WriteLine($"max = {max}, min = {min}");
